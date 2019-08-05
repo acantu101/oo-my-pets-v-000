@@ -49,7 +49,7 @@ class Owner
     end
 
     def dogs
-      Dog.all.select{ |dog| dog.owner == self}
+      Dog.all.select{ |dog|@@dogs << dog.owner == self}
     end
 
     def all_dogs
@@ -66,8 +66,6 @@ class Owner
      dog.mood = "happy"
         end
       end
-
-
 
 
 end
