@@ -53,8 +53,8 @@ class Owner
     end
 
     def save_dogs
-      @@dogs << Dog.all.each do |dog| 
-        if dog.owner == self 
+      @@dogs << Dog.all.each do |dog|
+        if dog.owner == self
           @@dogs << dog
     end
 
