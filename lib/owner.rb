@@ -78,10 +78,10 @@ end
  cat.mood = "nervous"
 
   self.dogs.each do |dog|
-dog.owner = "nervous"
+dog.owner = nil
 
   self.cats.each do |cat|
-cat.owner = "nervous"
+cat.owner = nil
           end
         end
       end
