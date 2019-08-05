@@ -50,10 +50,12 @@ class Owner
 
     def dogs
     @ownwer_dogs = Dog.all.select{ |dog| dog.owner == self}
+      end
     end
 
+    def dogs
+      @@dogs
     end
-
 
     def buy_dog(name)
       Dog.new(name, self)
