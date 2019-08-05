@@ -57,7 +57,7 @@ class Owner
          binding.pry
         if dog.owner == self
           @@dogs << dog
-          binding.pry
+
       end
       @@dogs
     end
