@@ -50,6 +50,7 @@ class Owner
 
     def dogs
       @@dogs << Dog.all.select{ |dog| dog.owner == self}
+      @@dogs
     end
 
     def all_dogs
