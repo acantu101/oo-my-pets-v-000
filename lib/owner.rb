@@ -53,7 +53,7 @@ class Owner
     @@dogs << @owner_dogs
     end
     end
-  end
+  
 
     def buy_dog(name)
       Dog.new(name, self)
