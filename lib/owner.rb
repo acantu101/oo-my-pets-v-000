@@ -56,6 +56,7 @@ class Owner
      Dog.all.each do |dog|
         if dog.owner == self
           @@dogs << dog
+          binding.pry
       end
       @@dogs
     end
@@ -70,7 +71,6 @@ class Owner
       @@dogs.each do |dog|
      dog.mood = "happy"
         end
-    binding.pry
         @@dogs
       end
 end
