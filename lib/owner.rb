@@ -50,9 +50,7 @@ class Owner
 
     def dogs
     Dog.all.select{ |dog| dog.owner == self}
-      end
     end
-
 
     def buy_dog(name)
      Dog.new(name, self)
@@ -61,6 +59,6 @@ class Owner
     def walk_dogs
       @@dog.each do |dog|
      dog.mood = "happy"
-        end
+   end
 
 end
