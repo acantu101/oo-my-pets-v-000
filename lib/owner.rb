@@ -49,7 +49,7 @@ class Owner
     end
 
     def dogs
-      Dog.all.select{ |dog|@@dogs << dog.owner == self}
+      @@dogs << Dog.all.select{ |dog| dog.owner == self}
     end
 
     def all_dogs
