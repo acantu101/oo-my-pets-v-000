@@ -89,7 +89,7 @@ cat.owner = nil
   end
 
 def list_pets
-  puts "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+  return "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
 end
 
 end
