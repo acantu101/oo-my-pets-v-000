@@ -54,6 +54,7 @@ class Owner
 
     def save_dogs
      Dog.all.each do |dog|
+         binding.pry
         if dog.owner == self
           @@dogs << dog
           binding.pry
