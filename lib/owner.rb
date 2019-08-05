@@ -65,7 +65,6 @@ class Owner
       @@dogs.each do |dog|
           if dog.mood != happy then dog.mood = "happy"
         end
-        dog.mood
       end
     end
 
