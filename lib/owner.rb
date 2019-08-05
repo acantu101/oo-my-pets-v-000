@@ -52,17 +52,13 @@ class Owner
     Dog.all.select{ |dog| dog.owner == self}
     end
 
-    def save_dogs
-      @@dogs << Dog.all.select{ |dog| dog.owner == self}
-    end
-
     def buy_dog(name)
      Dog.new(name, self)
     end
 
     def walk_dogs
       binding.pry
-      @@dogs.each do |dog|
+      self.dogs.each do |dog|
      dog.mood = "happy"
    end
  end
