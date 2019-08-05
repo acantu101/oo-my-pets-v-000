@@ -63,9 +63,9 @@ class Owner
 
     def walk_dogs
       @@dogs.each do |dog|
-        dog.each do |e|
           if dog.mood != happy then dog.mood = "happy"
         end
+        dog.mood
       end
     end
 
