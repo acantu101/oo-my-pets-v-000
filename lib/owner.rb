@@ -53,15 +53,14 @@ class Owner
       end
     end
 
-    def dogs
+    def save_dogs
       @@dogs << @owner_dogs
       @@dogs
     end
 
     def buy_dog(name)
-      Dog.new(name, self)
+    @@dogs <<  Dog.new(name, self)
     end
-
 
     def walk_dogs
       @@dog.each do |dog|
