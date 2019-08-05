@@ -54,6 +54,7 @@ class Owner
     end
 
     def dogs
+      @@dogs << @owner_dogs
       @@dogs
     end
 
