@@ -49,19 +49,18 @@ class Owner
     end
 
     def dogs
-    @ownwer_dogs = Dog.all.select{ |dog| dog.owner == self}
+    Dog.all.select{ |dog| dog.owner == self}
       end
     end
 
     def save_dogs
-      @@dogs << @owner_dogs
-      @@dogs
+      @@dogs << Dog.all.select{ |dog| dog.owner == self}
+  
     end
 
     def buy_dog(name)
     new_dog = Dog.new(name, self)
     @@dogs << new_dog
-
     @@dogs
 
     end
