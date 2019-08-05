@@ -53,9 +53,11 @@ class Owner
     end
 
     def save_dogs
-      @@dogs << Dog.all.each do |dog|
+     Dog.all.each do |dog|
         if dog.owner == self
           @@dogs << dog
+      end
+      @@dogs
     end
 
     def buy_dog(name)
