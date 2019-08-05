@@ -51,7 +51,7 @@ class Owner
     def dogs
     @ownwer_dogs = Dog.all.select{ |dog| dog.owner == self}
     end
-    @@dogs << @owner_dogs
+
     end
 
 
