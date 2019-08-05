@@ -59,16 +59,12 @@ class Owner
     end
 
     def buy_dog(name)
-    new_dog = Dog.new(name, self)
-    @@dogs << new_dog
-    @@dogs
-
+     Dog.new(name, self)
     end
 
     def walk_dogs
       @@dog.each do |dog|
      dog.mood = "happy"
         end
-
 
 end
